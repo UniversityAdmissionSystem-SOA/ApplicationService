@@ -1,0 +1,175 @@
+2020-09-23 17:32:22 - Application shutdown requested.
+2020-09-23 17:32:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 17:32:22 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:32:22 - HikariPool-1 - Shutdown initiated...
+2020-09-23 17:32:22 - HikariPool-1 - Shutdown completed.
+2020-09-23 17:32:25 - Starting UasApplicationServiceApplication on sashi-GL552JX with PID 105753 (/home/sashi/ApplicationService-master/UASApplicationService/target/classes started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 17:32:25 - No active profile set, falling back to default profiles: default
+2020-09-23 17:32:25 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 17:32:25 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 17:32:25 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cg.applicationservice.dao.ApplicationDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 17:32:25 - Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2020-09-23 17:32:25 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 17:32:25 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 17:32:25 - Finished Spring Data repository scanning in 25ms. Found 1 JPA repository interfaces.
+2020-09-23 17:32:26 - Tomcat initialized with port(s): 8089 (http)
+2020-09-23 17:32:26 - Starting service [Tomcat]
+2020-09-23 17:32:26 - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-23 17:32:26 - Initializing Spring embedded WebApplicationContext
+2020-09-23 17:32:26 - Root WebApplicationContext: initialization completed in 1329 ms
+2020-09-23 17:32:26 - HikariPool-1 - Starting...
+2020-09-23 17:32:26 - HikariPool-1 - Start completed.
+2020-09-23 17:32:26 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./src/data/demo'
+2020-09-23 17:32:26 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:32:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 17:32:26 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 17:32:26 - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-09-23 17:32:27 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 17:32:27 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-09-23 17:32:27 - Tomcat started on port(s): 8089 (http) with context path ''
+2020-09-23 17:32:27 - Triggering deferred initialization of Spring Data repositories…
+2020-09-23 17:32:27 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 17:32:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 17:32:27 - Spring Data repositories initialized!
+2020-09-23 17:32:27 - Started UasApplicationServiceApplication in 3.177 seconds (JVM running for 3.995)
+2020-09-23 17:32:40 - Application shutdown requested.
+2020-09-23 17:32:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 17:32:40 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:32:40 - HikariPool-1 - Shutdown initiated...
+2020-09-23 17:32:40 - HikariPool-1 - Shutdown completed.
+2020-09-23 17:32:43 - Starting UasApplicationServiceApplication on sashi-GL552JX with PID 105955 (/home/sashi/ApplicationService-master/UASApplicationService/target/classes started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 17:32:43 - No active profile set, falling back to default profiles: default
+2020-09-23 17:32:43 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 17:32:43 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 17:32:43 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cg.applicationservice.dao.ApplicationDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 17:32:43 - Finished Spring Data repository scanning in 30ms. Found 0 JDBC repository interfaces.
+2020-09-23 17:32:43 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 17:32:43 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 17:32:43 - Finished Spring Data repository scanning in 22ms. Found 1 JPA repository interfaces.
+2020-09-23 17:32:44 - Tomcat initialized with port(s): 8089 (http)
+2020-09-23 17:32:44 - Starting service [Tomcat]
+2020-09-23 17:32:44 - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-23 17:32:44 - Initializing Spring embedded WebApplicationContext
+2020-09-23 17:32:44 - Root WebApplicationContext: initialization completed in 1211 ms
+2020-09-23 17:32:44 - HikariPool-1 - Starting...
+2020-09-23 17:32:44 - HikariPool-1 - Start completed.
+2020-09-23 17:32:44 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./src/data/demo'
+2020-09-23 17:32:44 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 17:32:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 17:32:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 17:32:44 - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-09-23 17:32:44 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 17:32:44 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-09-23 17:32:45 - Tomcat started on port(s): 8089 (http) with context path ''
+2020-09-23 17:32:45 - Triggering deferred initialization of Spring Data repositories…
+2020-09-23 17:32:45 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 17:32:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 17:32:45 - Spring Data repositories initialized!
+2020-09-23 17:32:45 - Started UasApplicationServiceApplication in 3.089 seconds (JVM running for 3.935)
+2020-09-23 17:33:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 17:33:00 - Initializing Servlet 'dispatcherServlet'
+2020-09-23 17:33:00 - Completed initialization in 9 ms
+2020-09-23 17:33:00 - Returned the application List Successfully
+2020-09-23 17:33:30 - Return the application List based on Program Name Successfully
+2020-09-23 17:33:35 - Return the application List based on Program Name Successfully
+2020-09-23 18:41:56 - Application shutdown requested.
+2020-09-23 18:41:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 18:41:56 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:41:56 - HikariPool-1 - Shutdown initiated...
+2020-09-23 18:41:56 - HikariPool-1 - Shutdown completed.
+2020-09-23 18:41:58 - Starting UasApplicationServiceApplication on sashi-GL552JX with PID 110077 (/home/sashi/ApplicationService-master/UASApplicationService/target/classes started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 18:41:58 - No active profile set, falling back to default profiles: default
+2020-09-23 18:41:59 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 18:41:59 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 18:41:59 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cg.applicationservice.dao.ApplicationDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 18:41:59 - Finished Spring Data repository scanning in 29ms. Found 0 JDBC repository interfaces.
+2020-09-23 18:41:59 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 18:41:59 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 18:41:59 - Finished Spring Data repository scanning in 22ms. Found 1 JPA repository interfaces.
+2020-09-23 18:41:59 - Tomcat initialized with port(s): 8089 (http)
+2020-09-23 18:41:59 - Starting service [Tomcat]
+2020-09-23 18:41:59 - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-23 18:41:59 - Initializing Spring embedded WebApplicationContext
+2020-09-23 18:41:59 - Root WebApplicationContext: initialization completed in 1089 ms
+2020-09-23 18:41:59 - HikariPool-1 - Starting...
+2020-09-23 18:42:00 - HikariPool-1 - Start completed.
+2020-09-23 18:42:00 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./src/data/demo'
+2020-09-23 18:42:00 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 18:42:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 18:42:00 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 18:42:00 - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-09-23 18:42:00 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 18:42:00 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-09-23 18:42:00 - Tomcat started on port(s): 8089 (http) with context path ''
+2020-09-23 18:42:00 - Triggering deferred initialization of Spring Data repositories…
+2020-09-23 18:42:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 18:42:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 18:42:01 - Spring Data repositories initialized!
+2020-09-23 18:42:01 - Started UasApplicationServiceApplication in 2.936 seconds (JVM running for 3.73)
+2020-09-23 18:42:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 18:42:13 - Initializing Servlet 'dispatcherServlet'
+2020-09-23 18:42:13 - Completed initialization in 7 ms
+2020-09-23 18:42:14 - Returned the application List Successfully
+2020-09-23 18:42:20 - Return the application List based on Program Name Successfully
+2020-09-23 18:42:43 - Application applied successfully
+2020-09-23 18:43:11 - Application updated successfully
+2020-09-23 18:43:19 - Application applied successfully
+2020-09-23 18:43:26 - Return the application List based on Program Name Successfully
+2020-09-23 18:55:21 - Starting UasApplicationServiceApplicationTests on sashi-GL552JX with PID 113383 (started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 18:55:21 - No active profile set, falling back to default profiles: default
+2020-09-23 18:55:22 - Started UasApplicationServiceApplicationTests in 1.717 seconds (JVM running for 3.669)
+2020-09-23 19:30:13 - Returned the application List Successfully
+2020-09-23 19:32:13 - Return the application List based on Program Name Successfully
+2020-09-23 19:34:40 - Starting UasApplicationServiceApplicationTests on sashi-GL552JX with PID 118158 (started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 19:34:40 - No active profile set, falling back to default profiles: default
+2020-09-23 19:34:42 - Started UasApplicationServiceApplicationTests in 4.654 seconds (JVM running for 44.403)
+2020-09-23 19:35:56 - Application shutdown requested.
+2020-09-23 19:35:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 19:35:56 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 19:35:56 - HikariPool-1 - Shutdown initiated...
+2020-09-23 19:35:56 - HikariPool-1 - Shutdown completed.
+2020-09-23 19:44:31 - Starting UasApplicationServiceApplication on sashi-GL552JX with PID 119865 (/home/sashi/ApplicationService-master/UASApplicationService/target/classes started by sashi in /home/sashi/ApplicationService-master/UASApplicationService)
+2020-09-23 19:44:31 - No active profile set, falling back to default profiles: default
+2020-09-23 19:44:32 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 19:44:32 - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-23 19:44:32 - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.cg.applicationservice.dao.ApplicationDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-09-23 19:44:32 - Finished Spring Data repository scanning in 33ms. Found 0 JDBC repository interfaces.
+2020-09-23 19:44:32 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-23 19:44:32 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-23 19:44:32 - Finished Spring Data repository scanning in 28ms. Found 1 JPA repository interfaces.
+2020-09-23 19:44:33 - Tomcat initialized with port(s): 8089 (http)
+2020-09-23 19:44:33 - Starting service [Tomcat]
+2020-09-23 19:44:33 - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-23 19:44:33 - Initializing Spring embedded WebApplicationContext
+2020-09-23 19:44:33 - Root WebApplicationContext: initialization completed in 1703 ms
+2020-09-23 19:44:33 - HikariPool-1 - Starting...
+2020-09-23 19:44:33 - HikariPool-1 - Start completed.
+2020-09-23 19:44:33 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./src/data/demo'
+2020-09-23 19:44:33 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 19:44:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-23 19:44:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-23 19:44:33 - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-09-23 19:44:33 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-23 19:44:33 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-09-23 19:44:34 - Tomcat started on port(s): 8089 (http) with context path ''
+2020-09-23 19:44:34 - Triggering deferred initialization of Spring Data repositories…
+2020-09-23 19:44:34 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-23 19:44:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 19:44:35 - Spring Data repositories initialized!
+2020-09-23 19:44:35 - Started UasApplicationServiceApplication in 4.604 seconds (JVM running for 5.696)
+2020-09-23 19:49:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 19:49:11 - Initializing Servlet 'dispatcherServlet'
+2020-09-23 19:49:11 - Completed initialization in 225 ms
+2020-09-23 19:49:12 - Return the application List based on Program Name Successfully
+2020-09-23 19:50:33 - Returned the application List Successfully
+2020-09-23 19:52:02 - Return the application List based on Program Name Successfully
+2020-09-23 19:52:14 - Application updated successfully
+2020-09-23 19:52:20 - Application applied successfully
+2020-09-23 19:52:29 - Returned the application List Successfully
+2020-09-23 19:52:38 - Application applied successfully
+2020-09-23 19:52:41 - Returned the application List Successfully
+2020-09-23 20:36:04 - Application shutdown requested.
+2020-09-23 20:36:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-09-23 20:36:04 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 20:36:04 - HikariPool-1 - Shutdown initiated...
+2020-09-23 20:36:04 - HikariPool-1 - Shutdown completed.

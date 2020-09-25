@@ -37,6 +37,7 @@ public class UasApplicationServiceApplicationTests {
 	@MockBean
 	private ApplicationDao repository;
 	
+	
 	@Test
 	public void getApplicationsTest() {
 		when(repository.findAll()).thenReturn(Stream

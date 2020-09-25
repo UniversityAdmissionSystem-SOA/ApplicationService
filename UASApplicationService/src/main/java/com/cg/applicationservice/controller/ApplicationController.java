@@ -1,9 +1,6 @@
 package com.cg.applicationservice.controller;
 
 import java.util.List;
-import java.util.Optional;
-
-import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +23,11 @@ public class ApplicationController {
 	ApplicationService applicationService;
 	Logger logger=LoggerFactory.getLogger(ApplicationController.class);
 
+	/**
+	 * Method: getApplicationList
+	 * Description: Used to get the list of applications
+	 * @return The list of applications
+	 */
 	@GetMapping("/applicationList")
 	public List<Application> getApplicationList() {
 		List<Application> applicationList = null;
@@ -34,6 +36,13 @@ public class ApplicationController {
 		return applicationList;
 	}
 
+	/**
+	 * 
+	 * Method: getApplicationsById
+	 * Description: Used to get application by ID
+	 * @param id of the application to get
+	 * @return the application with the id
+	 */
 	@GetMapping("/applicationList/{id}")	
 	public Application getApplicationsById(@PathVariable("id") int id)
 	{
@@ -41,38 +50,67 @@ public class ApplicationController {
 		return applicationService.getApplicationById(id);
 	}
 
+
+	/**
+	 * Method: addApplication
+	 * Description: Used to add a new application
+	 * @param application : application details
+	 * @return Application
+	 */
 	@PostMapping("/application")
 	public Application addApplication(@RequestBody Application application) {
 		logger.info("Application applied successfully");
 		return applicationService.addApplication(application);
 	}
 
+	/**
+	 * Method: updateApplication
+	 * Description: Used to add a new application
+	 * @param id
+	 * @param application
+	 * @return message showing successfully added
+	 */
 	@PutMapping("/updateApplication/{id}")
 	public String updateApplication(@PathVariable("id") int id,@RequestBody Application application) {
 		logger.info("Application updated successfully");
 		applicationService.updateApplication(id,application);
 		return "Updated Application Successfully";
 	}
+	/**
+	 * Method: deleteApplication
+	 * Description: Used to add a new application
+	 * @param id
+	 * @return message showing successfully deleted
+	 */
 	@DeleteMapping("/applicationList/{id}")
-	public String addApplication(@PathVariable("id") int id) {
+	public String deleteApplication(@PathVariable("id") int id) {
 		logger.info("Application applied successfully");
 		applicationService.deleteApplication(id);
 		return "Deleted Application Successfully";
 	}
 
 
-	@PostConstruct
-	public void data() {
-		applicationService.addApplication(new Application(1,"Sashi","03/12/1998","Graduation",90,"get a job","sashi@gmail.com","1","waiting","06/22/2020"));
-		applicationService.addApplication(new Application(2,"Vishal","03/12/1998","Graduation",90,"get a job","vishal@gmail.com","1","waiting","03/22/2020"));
-		applicationService.addApplication(new Application(3,"Bishal","03/12/1998","Graduation",90,"get a job","Bishal@gmail.com","1","waiting","04/12/2020"));
-		applicationService.addApplication(new Application(4,"Preetam","03/12/1998","Graduation",90,"get a job","Preetam@gmail.com","1","waiting","04/22/2020"));
-		applicationService.addApplication(new Application(5,"Abhishek","03/12/1998","Graduation",90,"get a job","Abhishek@gmail.com","1","waiting","04/22/2020"));
-		applicationService.addApplication(new Application(6,"Gyana","03/12/1998","Graduation",90,"get a job","Gyana@gmail.com","1","waiting","04/22/2020"));
-		
-	}
-
-
 
 
 }
+
+
+
+
+
+
+
+
+//	@PostConstruct
+//	public void data() {
+//		applicationService.addApplication(new Application(1,"Sashi","03/12/1998","Graduation",90,"get a job","sashi@gmail.com","1","waiting","06/22/2020"));
+//		applicationService.addApplication(new Application(2,"Vishal","03/12/1998","Graduation",90,"get a job","vishal@gmail.com","1","waiting","03/22/2020"));
+//		applicationService.addApplication(new Application(3,"Bishal","03/12/1998","Graduation",90,"get a job","Bishal@gmail.com","1","waiting","04/12/2020"));
+//		applicationService.addApplication(new Application(4,"Preetam","03/12/1998","Graduation",90,"get a job","Preetam@gmail.com","1","waiting","04/22/2020"));
+//		applicationService.addApplication(new Application(5,"Abhishek","03/12/1998","Graduation",90,"get a job","Abhishek@gmail.com","1","waiting","04/22/2020"));
+//		applicationService.addApplication(new Application(6,"Gyana","03/12/1998","Graduation",90,"get a job","Gyana@gmail.com","1","waiting","04/22/2020"));
+//	}
+
+
+
+
