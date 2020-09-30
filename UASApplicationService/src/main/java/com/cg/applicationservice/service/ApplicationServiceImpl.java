@@ -2,6 +2,8 @@ package com.cg.applicationservice.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.cg.applicationservice.dao.ApplicationDao;
 import com.cg.applicationservice.entity.Application;
 import com.cg.applicationservice.exception.AlreadyExistsException;
+import com.cg.applicationservice.exception.InvalidPropertyException;
 import com.cg.applicationservice.exception.NotFoundException;
 
 
@@ -58,6 +61,7 @@ public class ApplicationServiceImpl implements ApplicationService {
 	 * Description: Adds a new application into the database
 	 * @param application: object containing data about application
 	 * @throws AlreadyExistsException is raised if the application provided with the ID is already present
+	 * @throws InvalidPropertyException is raised if any of the fields is invalid
 	 */
 	@Override
 	public Application addApplication(Application application) {
@@ -65,7 +69,21 @@ public class ApplicationServiceImpl implements ApplicationService {
 		{
 			throw new AlreadyExistsException("Application with ID "+application.getId()+" already Exists!");
 		}
-
+		if(application.getFullName()==null
+				||application.getEmailId()==null
+				||application.getDateOfBirth()==null
+				||application.getHighestQualification()==null
+				||application.getScheduledProgramId()==null
+				||application.getMarksObtained()==0
+				||application.getFullName().equals("")) {
+			throw new InvalidPropertyException("Please fill all the properties");
+		}
+		String regex = "^(.+)@(.+)$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(application.getEmailId());
+		if(!(matcher.matches())) {
+			throw new InvalidPropertyException("Invalid Email ID");
+		}
 		return  applicationDao.save(application);
 
 	}
@@ -84,6 +102,7 @@ public class ApplicationServiceImpl implements ApplicationService {
 		{
 			applicationDao.save(application);
 		}
+
 		else
 			throw new NotFoundException("Id is not present");
 

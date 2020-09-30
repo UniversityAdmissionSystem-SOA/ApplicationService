@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.cg.applicationservice.exception.AlreadyExistsException;
 import com.cg.applicationservice.exception.DuplicateException;
+import com.cg.applicationservice.exception.InvalidPropertyException;
 import com.cg.applicationservice.exception.NotFoundException;
 
 import java.sql.SQLException;
@@ -28,8 +29,14 @@ public class ExceptionController {
 	@ExceptionHandler(AlreadyExistsException.class)
 	public ResponseEntity<Object> exception(AlreadyExistsException exception)
 	{
-		return new ResponseEntity<>(exception.getMessage(),HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>(exception.getMessage(),HttpStatus.OK);
+	}
+	@ExceptionHandler(InvalidPropertyException.class)
+	public ResponseEntity<Object> exception(InvalidPropertyException exception)
+	{
+		return new ResponseEntity<>(exception.getMessage(),HttpStatus.OK);
 	}
 	
+
 
 }
